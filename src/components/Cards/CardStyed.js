@@ -2,31 +2,36 @@ import styled from "styled-components";
 
 
 export const StyedCards = styled.section`
-    #grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-        gap: 10px;
-        margin-left: 5%;
-        margin-right: 5%;
+
+@mixin Flexxx{
+    display: flex;
+    justify-content: center;
+}
+    #List-Movies{
+        display: flex;
+    justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        gap: 5px;
+        margin-top: 10px;
 
             .cards{
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
+                width: 25%;
+                flex-direction: column;
                 align-items: center;
                 text-align: center;
                 flex-wrap: wrap;
-                margin-bottom: 50px;
-                margin-top: 30px;
                 border: solid 1px black;
                 padding-top: 10px;
                 cursor: pointer;
-                
+
                 img{
                     width: 300px;
                 }
                 h2{
-                    width: 100%;
+                    width: 90%;
                     margin-top: 0;
                     margin-bottom: 0;
                     font-size : 20px;

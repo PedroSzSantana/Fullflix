@@ -1,34 +1,38 @@
+import { StyedCards } from './CardStyed';
 import { getList } from '../../assets/api';
 import { useState } from 'react';
 import { useEffect } from 'react';
-// import Details from '../pages/Details'
-import { StyedCards } from './CardStyed';
-import Details from '../../pages/Details/Details';
-
-
 
 export const Cards = ()=>{
 
-    const [movies, setMovies] = useState([])
+    const [movies, setMovies] = useState([]);
+
     useEffect(()=>{
         getList(setMovies)
-    },[])
-    
+    },[]);
+
     return(
        <StyedCards>
-            <div id='grid'>
-                {movies.map((item)=>{
-                
-                return(
-                    <div className='cards' onClick={(e)=>{window.location='/details'}}>
-                        <img src={`https://www.themoviedb.org/t/p/original/${item.poster_path}`} alt="" />
-                        <div>
-                            <h2>{item.title}</h2>
-                            <h4>Nota: {item.vote_average}</h4> 
+            <div id='List-Movies'>
+                {movies.map((item)=>{            
+                    return(               
+                        <div className='cards' id={item.id} onClick={(e)=>{
+
+                            let id = e.target.id;
+
+                            const DetailFilme = movies.filter(element =>  element.id == id);
+                            window.location='/details';
+                        
+                            }}>
+
+                            <img id={item.id} src={`https://www.themoviedb.org/t/p/original/${item.poster_path}`} alt="" />
+                            <div>
+                                <h2 id={item.id}> {item.title}</h2>
+                                <h4 id={item.id}>Nota: {item.vote_average}</h4> 
+                            </div>
                         </div>
-                    </div>
-                )
-            })} 
+                    )
+                })} 
             </div>
         </StyedCards>
     )

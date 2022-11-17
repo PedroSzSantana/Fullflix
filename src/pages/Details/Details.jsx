@@ -1,18 +1,18 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Footer } from "../../components/Footer/Footer"
-import { getDetails } from "../../assets/api"
 import { NavLink } from "react-router-dom"
 import { NavDetails } from "../../components/Navbar/NavDetails"
 import { ButtonStyed, DetailsStyed } from "./DetailsStyed"
+import { getDetails } from "../../assets/api"
 
 
 
 const Details = ({id})=>{
-    const [detail, setDetail] = useState([])
 
-     getDetails(id, setDetail)
-    console.log(detail)
+    const [details, setDetails] = useState([])
+    useEffect(()=>{
 
+    },[])
     return(
         <DetailsStyed>
             <NavDetails title={'Titulo'}/>
@@ -36,7 +36,7 @@ const Details = ({id})=>{
                         <p>{}</p>
                     </div>
                     <ButtonStyed>
-                        <NavLink to='/'><button>Voltar para Home</button></NavLink>
+                        <NavLink to='/'>Voltar para Home</NavLink>
                     </ButtonStyed>
                 </div>
             </main>

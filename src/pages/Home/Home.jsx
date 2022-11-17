@@ -4,6 +4,7 @@ import { NavHome } from "../../components/Navbar/NavHome";
 import { StyedHome } from "./HomeStyed";
 
 const Home = ()=>{
+        
     return(
         <StyedHome>
             <header>

@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const DetailsStyed = styled.div`
-
-    height: 100vh;
+    body{
+      height: 100vh;  
+    }
+    
 
     main{
-        height: 86.3%;
+        height: 85.450vh;
         display: grid;
-        grid-template-columns:repeat(2, 30% 70%);
+        grid-template-columns:repeat(2, 40% 70%);
         align-items: center;
 
         div{
@@ -24,7 +26,7 @@ export const DetailsStyed = styled.div`
     }
 `
 export const ButtonStyed = styled.div`
-        button{
+        a{
         color: #ffff;
         background-color: #c62823;
         padding: 20px;
@@ -32,8 +34,9 @@ export const ButtonStyed = styled.div`
         margin-top: 100px;
         font-size: 20px;
         font-weight: 700;
+        text-decoration: none;
     }
-    button:hover{
+    a:hover{
         background-color: #c62823a4;
         color: black;
     }
