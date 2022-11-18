@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const StyedNavHome = styled.div`
 
     width: 100%;
-    margin-bottom: auto;
+    margin-bottom: 50%;
 
     nav{
         background-color: #808080;

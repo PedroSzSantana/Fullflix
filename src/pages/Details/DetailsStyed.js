@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 export const DetailsStyed = styled.div`
+
+    color: white;
+
     body{
       height: 100vh;  
     }
     
-
     main{
         height: 85.450vh;
         display: grid;
         grid-template-columns:repeat(2, 40% 70%);
         align-items: center;
+        background-color: black;
 
         div{
             div{

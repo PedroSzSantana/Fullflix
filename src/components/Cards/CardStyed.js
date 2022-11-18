@@ -1,34 +1,29 @@
 import styled from "styled-components";
 
-
 export const StyedCards = styled.section`
 
-@mixin Flexxx{
-    display: flex;
-    justify-content: center;
-}
-    #List-Movies{
+        color: #ffff;
         display: flex;
-    justify-content: center;
+        justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 30px;
-        gap: 5px;
+        gap: 10px;
         margin-top: 10px;
-
-            .cards{
+        width: 100%;
+            .cards {
                 display: flex;
                 justify-content: center;
-                width: 25%;
                 flex-direction: column;
+                width: 320px;
                 align-items: center;
                 text-align: center;
-                flex-wrap: wrap;
-                border: solid 1px black;
+                border: solid 1px #ffff;
                 padding-top: 10px;
                 cursor: pointer;
+                padding-bottom: 10px;
 
                 img{
-                    width: 300px;
+                    width: 80%;
                 }
                 h2{
                     width: 90%;
@@ -37,5 +32,7 @@ export const StyedCards = styled.section`
                     font-size : 20px;
                 }
             }
-        }
+            .cards:hover{
+                border: solid 1px red;
+            }
 `

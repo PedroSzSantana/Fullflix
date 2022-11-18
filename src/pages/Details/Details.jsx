@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
 import { Footer } from "../../components/Footer/Footer"
 import { NavLink } from "react-router-dom"
 import { NavDetails } from "../../components/Navbar/NavDetails"
 import { ButtonStyed, DetailsStyed } from "./DetailsStyed"
-import { getDetails } from "../../assets/api"
+// import { getDetails } from "../../assets/api"
 
 
 
 const Details = ({id})=>{
 
-    const [details, setDetails] = useState([])
-    useEffect(()=>{
+    // const [details, setDetails] = useState([])
+    // useEffect(()=>{
 
-    },[])
+    // },[])
     return(
         <DetailsStyed>
             <NavDetails title={'Titulo'}/>
