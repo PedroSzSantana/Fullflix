@@ -2,46 +2,52 @@
 import { Footer } from "../../components/Footer/Footer"
 import { NavLink } from "react-router-dom"
 import { NavDetails } from "../../components/Navbar/NavDetails"
-import { ButtonStyed, DetailsStyed } from "./DetailsStyed"
+import { ButtonStyed, StyedDetails, StyedMainDetails } from "./DetailsStyed"
 // import { getDetails } from "../../assets/api"
 
 
 
-const Details = ({id})=>{
+const Details = ()=>{
 
     // const [details, setDetails] = useState([])
     // useEffect(()=>{
 
     // },[])
     return(
-        <DetailsStyed>
+        <StyedDetails>
+
             <NavDetails title={'Titulo'}/>
-            <main>
-                <p>Imagem filme</p>
+
+            <StyedMainDetails>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHGH_FdSIf01kpjCJSolrXeh4HO2veIaXvjQ&usqp=CAU" alt="" />
+                
                 <div>
                     <div>
                         <b>Titulo:</b>
-                        <p>{}</p> 
+                        <p>{'Titulo'}</p> 
                     </div>
+
                     <div>
                         <b>Sinopse: </b> 
-                        <p>{}</p>
+                        <p>{'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus debitis, dolores animi totam, eum maiores voluptates iusto nulla neque reiciendis facere error ea pariatur maxime! Quisquam dolorem dolorum est saepe!l'}</p>
                     </div>
                     <div>
                         <b>Lançamento: </b>
-                        <p>{}</p>
+                        <p>{'02/10/2003'}</p>
                     </div>
                     <div>
                         <b>Nota: </b>
-                        <p>{}</p>
+                        <p>{'7.7'}</p>
                     </div>
+
                     <ButtonStyed>
                         <NavLink to='/'>Voltar para Home</NavLink>
                     </ButtonStyed>
                 </div>
-            </main>
+            </StyedMainDetails>
             <Footer/>
-        </DetailsStyed>
+        </StyedDetails>
     )
 }
 export default Details

@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom"
 import { StyedNavDetails } from "./NavStyed"
 
 
-
 export const NavDetails = ({title})=>{
     return(
         <StyedNavDetails>

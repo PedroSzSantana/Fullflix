@@ -19,7 +19,7 @@ export const StyedHeaderHome = styled.header`
                 position: absolute;
                 font-weight: 700;
                 font-size: 200px; 
-            }  
+            }
     
     @media screen and (max-width: 450px) {
 
