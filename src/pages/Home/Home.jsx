@@ -7,12 +7,12 @@ const Home = ()=>{
     return(
         <StyedHome>
 
-            <StyedHeaderHome>
-                <h1 id="Name-Fullflix">FULLFLIX</h1>      
-            </StyedHeaderHome>
-                    
+            <StyedHeaderHome/>  
+
             <StyedMainHome>
-                <h2>Filmes Populares</h2>
+                <div>
+                   <h2>Filmes Populares</h2> 
+                </div>
                 
                 <Cards/>
 

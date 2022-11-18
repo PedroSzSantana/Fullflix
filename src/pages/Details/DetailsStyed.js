@@ -30,7 +30,7 @@ export const StyedMainDetails = styled.main`
 
         img{
             width: 90%;
-            height: 70%;
+            height: 400px;
             margin-left: 20px;
         }
         div{
