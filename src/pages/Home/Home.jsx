@@ -6,19 +6,14 @@ const Home = ()=>{
         
     return(
         <StyedHome>
-
             <StyedHeaderHome/>  
-
             <StyedMainHome>
                 <div>
                    <h2>Filmes Populares</h2> 
                 </div>
-                
                 <Cards/>
-
             </StyedMainHome>
             <Footer/>
-
         </StyedHome>
 
     )

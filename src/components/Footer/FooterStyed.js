@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const FooterStyed = styled.footer`
-
-    height: 50px;
+    height: 40px;
     background-color: #808080;
     display: flex;
     justify-content: center;

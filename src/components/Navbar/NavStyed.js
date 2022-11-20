@@ -14,7 +14,7 @@ export const StyedNavDetails = styled.header`
         li{
             display: inline-flex;
             margin-left: 10px;
-            list-style: none; 
+            list-style: none;
         }
         a{
             text-decoration: none;

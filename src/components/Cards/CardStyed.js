@@ -10,6 +10,7 @@ export const StyedCards = styled.section`
         gap: 10px;
         margin-top: 10px;
         width: 100%;
+        
             .cards {
                 display: flex;
                 justify-content: center;

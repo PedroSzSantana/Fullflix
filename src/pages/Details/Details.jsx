@@ -2,10 +2,8 @@
 import { Footer } from "../../components/Footer/Footer"
 import { NavLink } from "react-router-dom"
 import { NavDetails } from "../../components/Navbar/NavDetails"
-import { ButtonStyed, StyedDetails, StyedMainDetails } from "./DetailsStyed"
+import { ButtonStyed, StyedDetails, StyedMainDetails, StyedMainDivInfo } from "./DetailsStyed"
 // import { getDetails } from "../../assets/api"
-
-
 
 const Details = ()=>{
 
@@ -15,14 +13,12 @@ const Details = ()=>{
     // },[])
     return(
         <StyedDetails>
-
             <NavDetails title={'Titulo'}/>
-
             <StyedMainDetails>
-
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHGH_FdSIf01kpjCJSolrXeh4HO2veIaXvjQ&usqp=CAU" alt="" />
-                
                 <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHGH_FdSIf01kpjCJSolrXeh4HO2veIaXvjQ&usqp=CAU" alt="" />
+                </div>
+                <StyedMainDivInfo>
                     <div>
                         <b>Titulo:</b>
                         <p>{'Titulo'}</p> 
@@ -40,13 +36,12 @@ const Details = ()=>{
                         <b>Nota: </b>
                         <p>{'7.7'}</p>
                     </div>
-
                     <ButtonStyed>
                         <NavLink to='/'>Voltar para Home</NavLink>
                     </ButtonStyed>
-                </div>
+                </StyedMainDivInfo>
             </StyedMainDetails>
-            <Footer/>
+            <Footer/> 
         </StyedDetails>
     )
 }
