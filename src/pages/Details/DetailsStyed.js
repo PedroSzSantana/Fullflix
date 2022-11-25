@@ -19,18 +19,22 @@ export const StyedMainDetails = styled.main`
         }
 `
 export const StyedMainDivInfo = styled.div`
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
         height: 86.5%;
         margin-left: 5%;
-        div{
-                width: 70%;
-                display: flex;
-                gap: 20px;
-                margin-top: 20px;
 
-                b,p{
-                    font-size: 100%;
-                }
+        div{
+            width: 70%;
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+
+            b,p{
+                font-size: 100%;
+            }
         }
 `
 export const ButtonStyed = styled.div`
