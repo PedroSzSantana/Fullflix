@@ -8,10 +8,10 @@ export const getList = (setState)=>{
         console.log(error)
     })
 }
-export const getDetails = (id)=>{
+export const getDetails = async(id, setState)=>{
     axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=67c1b764b81ffc56216aaf91692930d2&language=en-US`)
     .then((response)=>{
-        
+        setState(response)
     }).catch((error)=>{
         console.log(error)
     })

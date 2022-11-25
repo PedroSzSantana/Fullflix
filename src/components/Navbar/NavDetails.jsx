@@ -1,8 +1,10 @@
+import { useSelector } from "react-redux"
 import { NavLink } from "react-router-dom"
 import { StyedNavDetails } from "./NavStyed"
 
 
 export const NavDetails = ({title})=>{
+    const page = useSelector((state) => state.page.value)
     return(
         <StyedNavDetails>
             <nav>
