@@ -4,7 +4,7 @@ import { StyedNavDetails } from "./NavStyed"
 
 
 export const NavDetails = ({title})=>{
-    const page = useSelector((state) => state.page.value)
+    // const page = useSelector((state) => state.page.value)
     return(
         <StyedNavDetails>
             <nav>

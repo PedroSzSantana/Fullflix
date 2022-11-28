@@ -31,7 +31,6 @@ export const Cards = ()=>{
                             className='cards'
                             id={item.id}
                             onMouseEnter={()=>{onHoverDetail()}}>
-
                             <img 
                             src={`https://www.themoviedb.org/t/p/original/${item.poster_path}`} 
                             id={item.id}  alt="" />
