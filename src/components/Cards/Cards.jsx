@@ -15,13 +15,13 @@ export const Cards = ()=>{
     useEffect(()=>{
         getList(setMovies)
     },[]);
+
     useEffect(()=>{
         dispatch(getMovieDetails(movieDetails))
     },[movieDetails]);
 
     const onHoverDetail = async(e)=>{
         await getDetails(e.target.id, setMovieDetails);
-         
     }
     return(
        <StyedCards>

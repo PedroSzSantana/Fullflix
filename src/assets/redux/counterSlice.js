@@ -10,7 +10,7 @@ export const conterSlice = createSlice({
     reducers: {
         goToIndex: (state) =>{
             state.value = "Home"
-        },
+        },         
         goToDetails: (state) =>{
             state.value = "Details"
         },
