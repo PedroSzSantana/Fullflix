@@ -10,4 +10,7 @@ export const FooterStyed = styled.footer`
     small{
         color: #ffff;
     }
+    @media screen and (max-width: 1024px) {
+        height: 30px;
+    }
 `

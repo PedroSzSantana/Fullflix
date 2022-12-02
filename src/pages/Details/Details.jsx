@@ -6,15 +6,15 @@ import { NavDetails } from "../../components/Navbar/NavDetails"
 import { ButtonStyed, StyedDetails, StyedMainDetails, StyedMainDivInfo } from "./DetailsStyed"
 
 const Details = ()=>{
-    const state = useSelector(state => state.page.value2)
     
+    const state = useSelector(state => state.page.details)
     return(
         <StyedDetails>
-            <NavDetails title={'Titulo'}/>
+            <NavDetails title={state.title}/>
             <StyedMainDetails>
-                
-                    <img src={`https://www.themoviedb.org/t/p/original/${state.backdrop_path}`} alt="" />
-                
+                <div>
+                    <img src={`https://www.themoviedb.org/t/p/original/${state.poster_path}`} alt="" />
+                </div> 
                 <StyedMainDivInfo>
                     <div>
                         <b>Titulo:</b>

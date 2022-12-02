@@ -7,30 +7,39 @@ export const StyedMainDetails = styled.main`
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         background-color: black;
-        height: 100vh;
-
-        img{
-            width: 100%;
-            height: 70%;
-            margin-left: 20px;
-            } 
-
-        
+        height: 87.6vh;
+        div{
+            display: flex;
+            justify-content: center;
+           img{
+            width: 50%;
+        } 
+        }
+        @media screen and (max-width: 1024px) {
+            height: 87vh;
+        }
 `
 export const StyedMainDivInfo = styled.div`
         display: flex;
         flex-direction: column;
-        align-items: center;
-
         div{
+            justify-content: start;
             width: 70%;
             display: flex;
             gap: 20px;
             margin-top: 20px;
             b,p{
                 font-size: 100%;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            div{
+                width: 80%;
+                b,p{
+                font-size: 90%;
+                }
             }
         }
 `

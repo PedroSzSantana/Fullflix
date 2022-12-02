@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 export const StyedNavDetails = styled.header`
     width: 100%;
-    margin-bottom: auto;
     color: #ffff;
-
     nav{
         display: flex;
         text-align:center;
@@ -23,6 +21,10 @@ export const StyedNavDetails = styled.header`
         }
         a:hover{
             text-decoration: underline;
+        }
+        @media screen and (max-width: 1024px){
+            height: 47px;
+            font-size: 14.3px;
         }
     }
 `
