@@ -2,36 +2,33 @@ import styled from "styled-components";
 
 export const StyedDetails = styled.div`
     color: white;
-
 `
 export const StyedMainDetails = styled.main`
-        height: 100vh;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: center;
         background-color: black;
-        gap: 50px;
+        height: 100vh;
 
         img{
-            width: 400px;
-            height: 400px;
+            width: 100%;
+            height: 70%;
             margin-left: 20px;
-        }
+            } 
+
+        
 `
 export const StyedMainDivInfo = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 10%;
-        height: 86.5%;
-        margin-left: 5%;
 
         div{
             width: 70%;
             display: flex;
             gap: 20px;
             margin-top: 20px;
-
             b,p{
                 font-size: 100%;
             }

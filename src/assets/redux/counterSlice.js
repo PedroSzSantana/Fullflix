@@ -4,7 +4,7 @@ const initialState = {
     value: 'Home',
     value2: {},
 }
-export const conterSlice = createSlice({
+export const counterSlice = createSlice({
     name: "page",
     initialState,
     reducers: {
@@ -19,6 +19,6 @@ export const conterSlice = createSlice({
         }
     }
 })
-export const { goToIndex, goToDetails, getMovieDetails } = conterSlice.actions;
+export const { goToIndex, goToDetails, getMovieDetails } = counterSlice.actions;
 
-export default conterSlice.reducer;
+export default counterSlice.reducer;

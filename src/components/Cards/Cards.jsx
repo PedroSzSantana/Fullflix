@@ -1,10 +1,8 @@
-import { StyedCards } from './CardStyed';
-import { getList, getDetails } from '../../assets/api';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import { getMovieDetails } from '../../assets/redux/counterSlice';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-
+import { getDetails, getList } from '../../assets/api';
+import { getMovieDetails } from '../../assets/redux/counterSlice';
+import { Cardssty, StyedCards } from './CardStyed';
 
 export const Cards = ()=>{
 
@@ -27,19 +25,13 @@ export const Cards = ()=>{
        <StyedCards>
                 {movies.map((item)=>{            
                     return(               
-                        <div 
-                            className='cards'
-                            id={item.id}
-                            onMouseEnter={()=>{onHoverDetail()}}>
-                            <img 
-                            src={`https://www.themoviedb.org/t/p/original/${item.poster_path}`} 
-                            id={item.id}  alt="" />
-                            
+                        <Cardssty key={item.id} to='/details'id={item.id} onMouseEnter={onHoverDetail}>
+                            <img src={`https://www.themoviedb.org/t/p/original/${item.poster_path}`}id={item.id}/>
                             <div id={item.id} >
                                 <h2>{item.title}</h2>
                                 <h4>Nota: {item.vote_average}</h4> 
                             </div>
-                        </div>
+                        </Cardssty>
                     )
                 })} 
         </StyedCards>

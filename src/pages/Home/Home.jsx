@@ -6,7 +6,7 @@ const Home = ()=>{
         
     return(
         <StyedHome>
-            <StyedHeaderHome/>  
+            <StyedHeaderHome/>
             <StyedMainHome>
                 <div>
                    <h2>Filmes Populares</h2> 
@@ -15,7 +15,6 @@ const Home = ()=>{
             </StyedMainHome>
             <Footer/>
         </StyedHome>
-
     )
 }
 export default Home
