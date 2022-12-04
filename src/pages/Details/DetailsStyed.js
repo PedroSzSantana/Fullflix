@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const StyedDetails = styled.div`
     color: white;
+    height: 100vh;
+    background-color: black;
 `
 export const StyedMainDetails = styled.main`
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         justify-content: start;
-        background-color: black;
-        height: 87.6vh;
+        
+        height: 86.7vh;
         div{
             display: flex;
             justify-content: center;
@@ -17,8 +19,15 @@ export const StyedMainDetails = styled.main`
             width: 50%;
         } 
         }
-        @media screen and (max-width: 1024px) {
-            height: 87vh;
+        @media screen and (max-width: 615px) {
+            display: flex;
+            flex-direction: column;
+            div{
+                margin-top: 10px;
+                img{ 
+                    width: 40%;
+                }
+            }
         }
 `
 export const StyedMainDivInfo = styled.div`
@@ -36,9 +45,21 @@ export const StyedMainDivInfo = styled.div`
         }
         @media screen and (max-width: 1024px) {
             div{
-                width: 80%;
+                width: 90%;
                 b,p{
                 font-size: 90%;
+
+                }
+            }
+        }
+        @media screen and (max-width: 615px) {
+            margin-left: 10px;
+            div{
+                gap: 10px;
+                flex-direction: column;
+                b,p{
+                font-size: 80%;
+
                 }
             }
         }
@@ -57,5 +78,20 @@ export const ButtonStyed = styled.div`
     a:hover{
         background-color: #c62823a4;
         color: black;
+    }
+    @media screen and (max-width: 615px){
+        a{
+            position: absolute;
+            left: 200px;
+            bottom: 80px;
+            padding: 10px;
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width: 375px){
+        a{
+            left: 60%;
+            bottom: 10%;
+        }
     }
 `

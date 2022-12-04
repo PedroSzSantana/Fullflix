@@ -8,6 +8,7 @@ export const StyedHeaderHome = styled.header`
     background-image: url(${background});
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: 100vh;
 `
 export const StyedMainHome = styled.main`

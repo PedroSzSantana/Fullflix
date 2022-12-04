@@ -6,6 +6,7 @@ export const FooterStyed = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top
 
     small{
         color: #ffff;
